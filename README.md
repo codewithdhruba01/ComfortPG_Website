@@ -1,6 +1,46 @@
+<div align="center">
+
+![Banner](public/assets/comfortPG.png)
+
+![GitHub contributors](https://img.shields.io/github/contributors/codewithdhruba01/ComfortPG_Website?color=lightgrey)
+[![GitHub forks](https://img.shields.io/github/forks/codewithdhruba01/ComfortPG_Website?color=lightgrey)](https://github.com/codewithdhruba01/ComfortPG_Website/network)
+[![GitHub stars](https://img.shields.io/github/stars/codewithdhruba01/ComfortPG_Website?color=lightgrey)](https://github.com/codewithdhruba01/ComfortPG_Website/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/codewithdhruba01/ComfortPG_Website?color=lightgrey)](https://github.com/codewithdhruba01/ComfortPG_Website/issues)
+<!-- [![MIT License](https://img.shields.io/badge/license-MIT-lightgrey)](./LICENSE) -->
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+
+
+</div>
+
 # ComfortPG - Complete PG Website with Room Booking System
 
 A modern, responsive PG (Paying Guest) accommodation website built with React, TypeScript, and Tailwind CSS. This comprehensive platform provides a complete solution for PG businesses to showcase their properties, manage bookings, and connect with potential residents.
+
+## CONTENTS OF THE FILE
+- [Overview](#comfortpg---complete-pg-website-with-room-booking-system)
+- [Features](#-features)
+- [Configuration](#-configuration)
+- [Installation](#-installation)
+- [Usage](#usage)
+- [Contributing](#-contributing)
+- [License](#license)
+- [Contact](#-contact)
+- [Tech Stack](#️-tech-stack)
+- [Room Management](#room-management)
+- [Home Page](#home-page)
+- [Additional Pages](#additional-pages)
+- [Project Structure](#-project-structure)
+- [Animations & Interactions](#animations--interactions)
+- [links](#links)
+- [Deployment](#-deployment)
+- [Acknowledgments](#-acknowledgments)
+
+
+
 
 ## 🌟 Features
 
@@ -76,8 +116,8 @@ A modern, responsive PG (Paying Guest) accommodation website built with React, T
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd comfort-pg-website
+   git clone https://github.com/codewithdhruba01/ComfortPG_Website.git
+   cd ComfortPG_Website
    ```
 
 2. **Install dependencies**
@@ -227,7 +267,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For support and questions:
 - **GitHub**: [Follow More](https://github.com/codewithdhruba01)
-- **Website**: [ComfortPG](https://comfortpg.com)
+- **Website**: [ComfortPG](https://comfort-pg.vercel.app)
 
 ## 🙏 Acknowledgments
 
