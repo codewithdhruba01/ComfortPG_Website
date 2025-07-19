@@ -13,11 +13,13 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import { Privacy, Terms, Funding, Partner, FAQ } from './pages/StaticPages';
 import FindBroker from './pages/FindBroker';
+import ScrollToTop from './components/ScrollToTop'; 
 
 function App() {
   return (
     <AppProvider>
       <Router>
+        <ScrollToTop /> {/* ✅ Add here */}
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
