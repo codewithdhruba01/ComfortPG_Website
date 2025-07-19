@@ -1,430 +1,244 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { 
-  // Users, 
-  // Building, 
-  Shield, 
-  Heart,
-  Award,
-  Target,
-  Lightbulb,
-  CheckCircle
-} from 'lucide-react';
-import { useTheme } from '../context/ThemeContext';
+import { Shield, Users, Star, Award, Heart, Zap } from 'lucide-react';
+import { useApp } from '../context/AppContext';
 
 const About: React.FC = () => {
-  const { isDark } = useTheme();
+  const { darkMode } = useApp();
 
   const values = [
     {
       icon: Shield,
       title: 'Safety First',
-      description: 'Your safety and security are our top priorities. We maintain strict security protocols and 24/7 surveillance.',
+      description: 'We prioritize the safety and security of all our residents with 24/7 security and CCTV surveillance.',
+      color: 'from-green-500 to-emerald-500'
     },
     {
-      icon: Heart,
-      title: 'Community Care',
-      description: 'We foster a welcoming community where residents feel at home and build meaningful connections.',
+      icon: Users,
+      title: 'Community',
+      description: 'Building a vibrant community where residents can connect, network, and create lasting friendships.',
+      color: 'from-blue-500 to-cyan-500'
+    },
+    {
+      icon: Star,
+      title: 'Excellence',
+      description: 'Committed to providing excellent service and maintaining the highest standards in accommodation.',
+      color: 'from-yellow-500 to-orange-500'
     },
     {
       icon: Award,
-      title: 'Quality Service',
-      description: 'We are committed to providing exceptional service and maintaining the highest standards of accommodation.',
+      title: 'Quality',
+      description: 'Premium amenities and well-maintained facilities to ensure a comfortable living experience.',
+      color: 'from-purple-500 to-pink-500'
     },
     {
-      icon: Target,
-      title: 'Affordable Living',
-      description: 'We believe comfortable living should be accessible to everyone, offering competitive pricing without compromising quality.',
+      icon: Heart,
+      title: 'Care',
+      description: 'We care about our residents well-being and strive to create a home away from home.',
+      color: 'from-red-500 to-pink-500'
     },
-  ];
-
-  const stats = [
-    { label: 'Years of Experience', value: '8+' },
-    { label: 'Happy Residents', value: '1000+' },
-    { label: 'Properties Managed', value: '50+' },
-    { label: 'Cities Served', value: '5+' },
+    {
+      icon: Zap,
+      title: 'Innovation',
+      description: 'Constantly innovating to provide modern solutions and enhance the living experience.',
+      color: 'from-indigo-500 to-purple-500'
+    }
   ];
 
   const team = [
     {
       name: 'Rajesh Kumar',
       role: 'Founder & CEO',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      description: 'With over 10 years in real estate, Rajesh founded ComfortPG to revolutionize student and professional accommodation.',
+      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Visionary leader with 10+ years in hospitality industry.'
     },
     {
       name: 'Priya Sharma',
       role: 'Operations Manager',
-      image: 'https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      description: 'Priya ensures smooth operations across all properties, focusing on resident satisfaction and service excellence.',
+      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Expert in operations management and customer service.'
     },
     {
       name: 'Amit Patel',
-      role: 'Customer Relations',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      description: 'Amit leads our customer service team, ensuring every resident has a positive experience with ComfortPG.',
+      role: 'Property Manager',
+      image: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Specializes in property maintenance and resident relations.'
     },
-  ];
-
-  const achievements = [
-    'Best PG Service Provider 2023',
-    'Customer Choice Award 2022',
-    'Excellence in Hospitality 2021',
-    'Top Rated Accommodation Service',
-    'Quality Certification ISO 9001',
-    'Safety Standards Compliance',
+    {
+      name: 'Sneha Reddy',
+      role: 'Customer Success',
+      image: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Dedicated to ensuring the best experience for all residents.'
+    }
   ];
 
   return (
-    <div className={`min-h-screen pt-20 ${isDark ? 'bg-gray-900' : 'bg-gray-50'}`}>
-      {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
-            alt="About Us"
-            className="w-full h-full object-cover"
-          />
-          <div className={`absolute inset-0 ${
-            isDark ? 'bg-black/70' : 'bg-black/50'
-          }`} />
+    <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-gray-50'} py-12`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Hero Section */}
+        <div className="text-center mb-16">
+          <h1 className={`text-4xl md:text-5xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
+            About
+            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent block mt-2">
+              ComfortPG
+            </span>
+          </h1>
+          <p className={`text-xl ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-4xl mx-auto leading-relaxed`}>
+            We are dedicated to providing comfortable, secure, and affordable accommodation solutions for students and professionals. 
+            Our mission is to create a home away from home where residents can thrive and build lasting connections.
+          </p>
         </div>
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              About ComfortPG
-            </h1>
-            <p className="text-xl sm:text-2xl text-gray-200 max-w-3xl mx-auto">
-              Creating comfortable homes for students and professionals since 2016. 
-              Your trusted partner in finding the perfect accommodation.
-            </p>
-          </motion.div>
-        </div>
-      </section>
 
-      {/* Stats Section */}
-      <section className={`py-16 ${isDark ? 'bg-gray-800' : 'bg-white'}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <div className={`text-3xl sm:text-4xl font-bold ${
-                  isDark ? 'text-blue-400' : 'text-blue-600'
-                } mb-2`}>
-                  {stat.value}
-                </div>
-                <div className={`text-sm sm:text-base ${
-                  isDark ? 'text-gray-300' : 'text-gray-600'
-                }`}>
-                  {stat.label}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Our Story Section */}
-      <section className={`py-20 ${isDark ? 'bg-gray-900' : 'bg-gray-50'}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Story Section */}
+        <div className="mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <h2 className={`text-3xl sm:text-4xl font-bold ${
-                isDark ? 'text-white' : 'text-gray-900'
-              } mb-6`}>
+            <div>
+              <h2 className={`text-3xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
                 Our Story
               </h2>
-              <div className="space-y-4 text-lg">
-                <p className={`${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
-                  ComfortPG was founded in 2016 with a simple mission: to provide safe, 
-                  comfortable, and affordable accommodation for students and working professionals. 
-                  What started as a small venture has grown into one of the most trusted names 
-                  in the PG accommodation industry.
-                </p>
-                <p className={`${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
-                  We understand that finding the right accommodation can be challenging, 
-                  especially when you're new to a city. That's why we've dedicated ourselves 
-                  to creating spaces that feel like home, with modern amenities, friendly 
-                  communities, and exceptional service.
-                </p>
-                <p className={`${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
-                  Today, we're proud to serve over 1000 residents across multiple cities, 
-                  maintaining our commitment to quality, safety, and customer satisfaction 
-                  in everything we do.
-                </p>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
+              <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'} mb-6`}>
+                Founded in 2021, ComfortPG began with a simple vision: to revolutionize the paying guest accommodation 
+                industry by providing safe, comfortable, and affordable living spaces for students and working professionals.
+              </p>
+              <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'} mb-6`}>
+                What started as a small venture with a handful of rooms has grown into a trusted network of premium 
+                PG accommodations across major cities. We've housed over 5,000 happy residents and continue to expand 
+                our services to meet the growing demand for quality accommodation.
+              </p>
+              <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                Today, we're proud to be a leading name in the PG industry, known for our commitment to excellence, 
+                innovation, and creating communities that feel like home.
+              </p>
+            </div>
+            <div className="relative">
               <img
-                src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Our Story"
-                className="w-full h-96 object-cover rounded-xl shadow-xl"
+                className="rounded-2xl shadow-2xl"
               />
-              <div className={`absolute inset-0 rounded-xl ${
-                isDark ? 'bg-blue-900/20' : 'bg-blue-600/20'
-              }`} />
-            </motion.div>
+              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl flex items-center justify-center">
+                <Award className="w-12 h-12 text-white" />
+              </div>
+            </div>
           </div>
         </div>
-      </section>
 
-      {/* Our Values Section */}
-      <section className={`py-20 ${isDark ? 'bg-gray-800' : 'bg-white'}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className={`text-3xl sm:text-4xl font-bold ${
-              isDark ? 'text-white' : 'text-gray-900'
-            } mb-4`}>
+        {/* Values Section */}
+        <div className="mb-20">
+          <div className="text-center mb-16">
+            <h2 className={`text-3xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
               Our Values
             </h2>
-            <p className={`text-xl ${
-              isDark ? 'text-gray-400' : 'text-gray-600'
-            } max-w-2xl mx-auto`}>
-              The principles that guide us in everything we do
+            <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
+              These core values guide everything we do and help us create exceptional living experiences for our residents.
             </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {values.map((value, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className={`p-8 rounded-xl ${
-                  isDark ? 'bg-gray-700' : 'bg-gray-50'
-                } hover:shadow-lg transition-shadow duration-300`}
-              >
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full ${
-                  isDark ? 'bg-blue-600/20' : 'bg-blue-100'
-                } mb-6`}>
-                  <value.icon className={`w-8 h-8 ${
-                    isDark ? 'text-blue-400' : 'text-blue-600'
-                  }`} />
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {values.map((value, index) => {
+              const Icon = value.icon;
+              return (
+                <div
+                  key={index}
+                  className={`${darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} p-8 rounded-2xl border hover:shadow-2xl transition-all duration-300 group`}
+                >
+                  <div className={`w-16 h-16 bg-gradient-to-r ${value.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <Icon className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className={`text-xl font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} mb-3`}>
+                    {value.title}
+                  </h3>
+                  <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                    {value.description}
+                  </p>
                 </div>
-                <h3 className={`text-xl font-semibold ${
-                  isDark ? 'text-white' : 'text-gray-900'
-                } mb-4`}>
-                  {value.title}
-                </h3>
-                <p className={`${
-                  isDark ? 'text-gray-300' : 'text-gray-600'
-                }`}>
-                  {value.description}
-                </p>
-              </motion.div>
-            ))}
+              );
+            })}
           </div>
         </div>
-      </section>
 
-      {/* Team Section */}
-      <section className={`py-20 ${isDark ? 'bg-gray-900' : 'bg-gray-50'}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className={`text-3xl sm:text-4xl font-bold ${
-              isDark ? 'text-white' : 'text-gray-900'
-            } mb-4`}>
+        {/* Team Section */}
+        <div className="mb-20">
+          <div className="text-center mb-16">
+            <h2 className={`text-3xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
               Meet Our Team
             </h2>
-            <p className={`text-xl ${
-              isDark ? 'text-gray-400' : 'text-gray-600'
-            } max-w-2xl mx-auto`}>
-              The dedicated professionals behind ComfortPG
+            <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
+              Our dedicated team works tirelessly to ensure that every resident has the best possible experience.
             </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className={`text-center p-6 rounded-xl ${
-                  isDark ? 'bg-gray-800' : 'bg-white'
-                } shadow-lg hover:shadow-xl transition-shadow duration-300`}
+                className={`${darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} p-6 rounded-2xl border hover:shadow-2xl transition-all duration-300 text-center group`}
               >
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
+                  className="w-20 h-20 rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
                 />
-                <h3 className={`text-xl font-semibold ${
-                  isDark ? 'text-white' : 'text-gray-900'
-                } mb-2`}>
+                <h3 className={`text-lg font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} mb-2`}>
                   {member.name}
                 </h3>
-                <p className={`text-blue-600 font-medium mb-4`}>
+                <p className="text-purple-600 font-medium mb-3">
                   {member.role}
                 </p>
-                <p className={`${
-                  isDark ? 'text-gray-300' : 'text-gray-600'
-                }`}>
+                <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                   {member.description}
                 </p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
-      </section>
 
-      {/* Achievements Section */}
-      <section className={`py-20 ${isDark ? 'bg-gray-800' : 'bg-white'}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className={`text-3xl sm:text-4xl font-bold ${
-              isDark ? 'text-white' : 'text-gray-900'
-            } mb-4`}>
-              Our Achievements
+        {/* Stats Section */}
+        <div className={`${darkMode ? 'bg-gray-800' : 'bg-white'} rounded-2xl p-8 md:p-12`}>
+          <div className="text-center mb-12">
+            <h2 className={`text-3xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>
+              Our Impact
             </h2>
-            <p className={`text-xl ${
-              isDark ? 'text-gray-400' : 'text-gray-600'
-            } max-w-2xl mx-auto`}>
-              Recognition for our commitment to excellence
+            <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+              Numbers that showcase our commitment to excellence
             </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {achievements.map((achievement, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className={`flex items-center space-x-3 p-4 rounded-lg ${
-                  isDark ? 'bg-gray-700' : 'bg-gray-50'
-                }`}
-              >
-                <CheckCircle className={`w-6 h-6 ${
-                  isDark ? 'text-green-400' : 'text-green-600'
-                } flex-shrink-0`} />
-                <span className={`font-medium ${
-                  isDark ? 'text-white' : 'text-gray-900'
-                }`}>
-                  {achievement}
-                </span>
-              </motion.div>
-            ))}
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className={`text-4xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-2`}>
+                5000+
+              </div>
+              <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                Happy Residents
+              </p>
+            </div>
+            <div className="text-center">
+              <div className={`text-4xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-2`}>
+                200+
+              </div>
+              <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                Premium Rooms
+              </p>
+            </div>
+            <div className="text-center">
+              <div className={`text-4xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-2`}>
+                4.8
+              </div>
+              <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                Average Rating
+              </p>
+            </div>
+            <div className="text-center">
+              <div className={`text-4xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-2`}>
+                15+
+              </div>
+              <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                Cities Served
+              </p>
+            </div>
           </div>
         </div>
-      </section>
-
-      {/* Mission Section */}
-      <section className={`py-20 ${isDark ? 'bg-gray-900' : 'bg-gray-50'}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <img
-                src="https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-                alt="Our Mission"
-                className="w-full h-96 object-cover rounded-xl shadow-xl"
-              />
-              <div className={`absolute inset-0 rounded-xl ${
-                isDark ? 'bg-blue-900/20' : 'bg-blue-600/20'
-              }`} />
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <h2 className={`text-3xl sm:text-4xl font-bold ${
-                isDark ? 'text-white' : 'text-gray-900'
-              } mb-6`}>
-                Our Mission
-              </h2>
-              <div className="space-y-4 text-lg">
-                <p className={`${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
-                  To revolutionize the PG accommodation industry by providing safe, 
-                  comfortable, and affordable living spaces that enable students and 
-                  professionals to thrive in their pursuits.
-                </p>
-                <p className={`${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
-                  We envision a future where finding quality accommodation is effortless, 
-                  where every resident feels valued and cared for, and where communities 
-                  are built on trust, respect, and mutual support.
-                </p>
-              </div>
-              
-              <div className="mt-8 flex items-center space-x-4">
-                <div className={`p-3 rounded-full ${
-                  isDark ? 'bg-blue-600/20' : 'bg-blue-100'
-                }`}>
-                  <Lightbulb className={`w-6 h-6 ${
-                    isDark ? 'text-blue-400' : 'text-blue-600'
-                  }`} />
-                </div>
-                <div>
-                  <h3 className={`text-lg font-semibold ${
-                    isDark ? 'text-white' : 'text-gray-900'
-                  }`}>
-                    Innovation in Accommodation
-                  </h3>
-                  <p className={`${
-                    isDark ? 'text-gray-400' : 'text-gray-600'
-                  }`}>
-                    Continuously improving our services with technology and innovation
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
   );
 };
