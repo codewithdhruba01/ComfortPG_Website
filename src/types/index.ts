@@ -1,22 +1,57 @@
 export interface Room {
   id: string;
-  title: string;
+  name: string;
+  type: string;
   price: number;
   image: string;
   images: string[];
-  shortDescription: string;
-  fullDescription: string;
+  description: string;
   amenities: string[];
-  category: string;
-  capacity: number;
-  area: string;
+  size: string;
+  availability: boolean;
   rating: number;
   reviews: number;
-  available: boolean;
+  category: string;
 }
 
-export interface Category {
+export interface CartItem {
+  room: Room;
+  quantity: number;
+  checkIn: string;
+  checkOut: string;
+}
+
+export interface User {
   id: string;
   name: string;
-  icon: string;
+  email: string;
+  phone: string;
+}
+
+export interface Broker {
+  id: string;
+  name: string;
+  image: string;
+  city: string;
+  area: string;
+  experience: number;
+  rating: number;
+  reviews: number;
+  phone: string;
+  email: string;
+  specialties: string[];
+  description: string;
+  verified: boolean;
+  responseTime: string;
+  languages: string[];
+  properties: number;
+}
+
+export interface ChatMessage {
+  id: string;
+  senderId: string;
+  senderName: string;
+  message: string;
+  timestamp: Date;
+  isUser: boolean;
 }
