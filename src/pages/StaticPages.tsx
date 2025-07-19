@@ -53,7 +53,7 @@ export const Privacy: React.FC = () => {
       
       <h2 className="text-2xl font-semibold mt-8 mb-4">Contact Us</h2>
       <p>
-        If you have any questions about this Privacy Policy, please contact us at privacy@pghub.com.
+        If you have any questions about this Privacy Policy, please contact us at privacy@comfortpg.com.
       </p>
     </div>
   );
@@ -126,7 +126,7 @@ export const Funding: React.FC = () => {
       
       <h2 className="text-2xl font-semibold mt-8 mb-4">Contact for Investment</h2>
       <p>
-        For investment inquiries, please contact us at investors@pghub.com with your investment proposal
+        For investment inquiries, please contact us at investors@comfortpg.com with your investment proposal
         and we will get back to you within 48 hours.
       </p>
     </div>
@@ -169,7 +169,7 @@ export const Partner: React.FC = () => {
       
       <h2 className="text-2xl font-semibold mt-8 mb-4">Get Started</h2>
       <p>
-        Ready to partner with us? Contact our partnership team at partners@pghub.com or call us at
+        Ready to partner with us? Contact our partnership team at partners@comfortpg.com or call us at
         +91 9999999999 to discuss your property and partnership opportunities.
       </p>
     </div>

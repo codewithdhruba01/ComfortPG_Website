@@ -83,10 +83,10 @@ const Contact: React.FC = () => {
                     Email Address
                   </h3>
                   <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                    info@pghub.com
+                    info@comfortpg.com
                   </p>
                   <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                    support@pghub.com
+                    support@comfortpg.com
                   </p>
                 </div>
               </div>
