@@ -100,9 +100,9 @@ const Contact: React.FC = () => {
                     Office Address
                   </h3>
                   <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                    123 Business District,<br />
-                    Connaught Place,<br />
-                    New Delhi - 110001
+                    Elliot Rode,<br />
+                    Park Street,<br />
+                    Malllick Buzar Kolkata - 110001
                   </p>
                 </div>
               </div>

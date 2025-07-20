@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Home, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Home, Mail, Phone, MapPin, Twitter, Instagram, Linkedin, Github } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
 
 const Footer: React.FC = () => {
@@ -16,10 +16,10 @@ const Footer: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', color: 'hover:text-blue-600' },
-    { icon: Twitter, href: '#', color: 'hover:text-blue-400' },
-    { icon: Instagram, href: '#', color: 'hover:text-pink-600' },
-    { icon: Linkedin, href: '#', color: 'hover:text-blue-700' },
+    { icon: Github, href: 'https://github.com/codewithdhruba01', color: 'hover:text-black' },
+    { icon: Twitter, href: 'https://x.com/codewithdhruba', color: 'hover:text-blue-400' },
+    { icon: Instagram, href: 'https://www.instagram.com/dhrubaraj_pati/#', color: 'hover:text-pink-600' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/dhrubaraj-pati/', color: 'hover:text-blue-700' },
   ];
 
   return (
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className={`text-sm font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} uppercase tracking-wider mb-4`}>
+            <h3 className={`text-sm font-bold ${darkMode ? 'text-white' : 'text-gray-900'} uppercase tracking-wider mb-4`}>
               Quick Links
             </h3>
             <ul className="space-y-2">
@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className={`text-sm font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} uppercase tracking-wider mb-4`}>
+            <h3 className={`text-sm font-bold ${darkMode ? 'text-white' : 'text-gray-900'} uppercase tracking-wider mb-4`}>
               Contact
             </h3>
             <div className="space-y-3">
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
               <div className="flex items-center space-x-2">
                 <MapPin className={`w-4 h-4 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`} />
                 <span className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                  Delhi, India
+                  Kolkata, India
                 </span>
               </div>
             </div>

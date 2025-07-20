@@ -26,33 +26,34 @@ const StaticPage: React.FC<StaticPageProps> = ({ title, content }) => {
 };
 
 export const Privacy: React.FC = () => {
+  const { darkMode } = useApp();
   const content = (
     <div className="space-y-6">
-      <p>
+      <p className={`${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         At ComfortPG, we are committed to protecting your privacy and ensuring the security of your personal information.
         This Privacy Policy explains how we collect, use, and safeguard your data when you use our services.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Information We Collect</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`} >Information We Collect</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         We collect information you provide directly to us, such as when you create an account, book a room, or contact us.
         This may include your name, email address, phone number, and payment information.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">How We Use Your Information</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>How We Use Your Information</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         We use the information we collect to provide, maintain, and improve our services, process transactions,
         communicate with you, and comply with legal obligations.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Data Security</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Data Security</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         We implement appropriate technical and organizational measures to protect your personal information
         against unauthorized access, disclosure, or destruction.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Contact Us</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Contact Us</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         If you have any questions about this Privacy Policy, please contact us at privacy@comfortpg.com.
       </p>
     </div>
@@ -62,33 +63,34 @@ export const Privacy: React.FC = () => {
 };
 
 export const Terms: React.FC = () => {
+  const { darkMode } = useApp();
   const content = (
     <div className="space-y-6">
-      <p>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         Welcome to ComfortPG. These Terms and Conditions govern your use of our services.
         By accessing or using our platform, you agree to be bound by these terms.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Booking Terms</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Booking Terms</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         All bookings are subject to availability and confirmation. Payment must be made according to the
         agreed terms, and cancellations are subject to our cancellation policy.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">User Responsibilities</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>User Responsibilities</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         You are responsible for maintaining the confidentiality of your account information and for all
         activities that occur under your account.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Prohibited Activities</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Prohibited Activities</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         You may not use our services for any illegal or unauthorized purpose, or engage in any activity
         that disrupts or interferes with our services.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Limitation of Liability</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Limitation of Liability</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         ComfortPG shall not be liable for any indirect, incidental, special, or consequential damages
         arising out of or in connection with your use of our services.
       </p>
@@ -99,33 +101,36 @@ export const Terms: React.FC = () => {
 };
 
 export const Funding: React.FC = () => {
+  const { darkMode } = useApp();
   const content = (
     <div className="space-y-6">
-      <p>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
+        At ComfortPG, we believe in transparency and accountability in our operations.
+        This Funding Information page outlines our current funding status and investment opportunities.
         ComfortPG is committed to transparency in our funding and investment activities.
         This page provides information about our funding sources and investment opportunities.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Current Funding</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Current Funding</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         We are currently self-funded and have raised initial capital from private investors and founders.
         Our funding allows us to expand our services and improve our platform continuously.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Investment Opportunities</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Investment Opportunities</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         We are open to strategic partnerships and investment opportunities that align with our mission
         to provide quality accommodation solutions. If you're interested in investing, please contact us.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Use of Funds</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Use of Funds</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         Our funding is primarily used for platform development, property acquisition, technology improvements,
         and expanding our team to serve more residents effectively.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Contact for Investment</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Contact for Investment</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         For investment inquiries, please contact us at investors@comfortpg.com with your investment proposal
         and we will get back to you within 48 hours.
       </p>
@@ -136,15 +141,16 @@ export const Funding: React.FC = () => {
 };
 
 export const Partner: React.FC = () => {
+  const { darkMode } = useApp();
   const content = (
     <div className="space-y-6">
-      <p>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         Join the ComfortPG network and become a partner property owner. We're always looking for quality
         properties to add to our platform and provide excellent accommodation options for our residents.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Partnership Benefits</h2>
-      <ul className="list-disc pl-6 space-y-2">
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Partnership Benefits</h2>
+      <ul className={`list-disc pl-6 space-y-2 ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         <li>Professional property management services</li>
         <li>Marketing and promotion on our platform</li>
         <li>Guaranteed occupancy and rental income</li>
@@ -152,14 +158,14 @@ export const Partner: React.FC = () => {
         <li>Regular property maintenance and upkeep</li>
       </ul>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Partner Requirements</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Partner Requirements</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         We partner with property owners who share our commitment to quality and safety. Properties must
         meet our standards for safety, cleanliness, and amenities.
       </p>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Partnership Process</h2>
-      <ol className="list-decimal pl-6 space-y-2">
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Partnership Process</h2>
+      <ol className={`list-decimal pl-6 space-y-2 ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         <li>Submit your property details through our partnership form</li>
         <li>Property inspection and evaluation by our team</li>
         <li>Agreement negotiation and contract signing</li>
@@ -167,8 +173,8 @@ export const Partner: React.FC = () => {
         <li>Ongoing management and support</li>
       </ol>
       
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Get Started</h2>
-      <p>
+      <h2 className={`text-2xl font-semibold mt-8 mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Get Started</h2>
+      <p className={` ${darkMode ? 'text-white/70' : 'text-gray-900'}`}>
         Ready to partner with us? Contact our partnership team at partners@comfortpg.com or call us at
         +91 9999999999 to discuss your property and partnership opportunities.
       </p>
