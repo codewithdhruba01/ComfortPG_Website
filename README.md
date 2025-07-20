@@ -6,7 +6,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/codewithdhruba01/ComfortPG_Website?color=lightgrey)](https://github.com/codewithdhruba01/ComfortPG_Website/network)
 [![GitHub stars](https://img.shields.io/github/stars/codewithdhruba01/ComfortPG_Website?color=lightgrey)](https://github.com/codewithdhruba01/ComfortPG_Website/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/codewithdhruba01/ComfortPG_Website?color=lightgrey)](https://github.com/codewithdhruba01/ComfortPG_Website/issues)
-<!-- [![MIT License](https://img.shields.io/badge/license-MIT-lightgrey)](./LICENSE) -->
+[![Apache-2.0 License](https://img.shields.io/badge/Apache-2.0license-lightgrey)](./LICENSE)
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -25,10 +25,9 @@ A modern, responsive PG (Paying Guest) accommodation website built with React, T
 - [Features](#-features)
 - [Configuration](#-configuration)
 - [Installation](#-installation)
-- [Usage](#usage)
 - [Contributing](#-contributing)
-- [License](#license)
-- [Contact](#-contact)
+- [License](#-license)
+- [Contributing](#-contributing)
 - [Tech Stack](#️-tech-stack)
 - [Room Management](#room-management)
 - [Home Page](#home-page)
@@ -261,7 +260,7 @@ The project uses a custom Tailwind configuration with:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the Apache-2.0 License - see the [LICENS](./LICENSE) file for details.
 
 ## Links
 
