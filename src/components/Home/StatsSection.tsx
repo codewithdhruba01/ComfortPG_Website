@@ -42,13 +42,13 @@ const StatsSection: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className={`text-4xl md:text-5xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
+          <h2 className={`text-4xl md:text-5xl font-excon font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
             Numbers That
-            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent block mt-2">
+            <span className="bg-gradient-to-r from-blue-600 to-sky-600 bg-clip-text text-transparent block mt-2 font-excon">
               Speak for Themselves
             </span>
           </h2>
-          <p className={`text-xl ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
+          <p className={`text-xl ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto font-supreme`}>
             We've built a community of satisfied residents who trust us with their accommodation needs.
           </p>
         </div>
@@ -67,7 +67,7 @@ const StatsSection: React.FC = () => {
                 <div className={`text-4xl md:text-5xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-2`}>
                   {stat.value}
                 </div>
-                <div className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                <div className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-700 font-poppins'}`}>
                   {stat.label}
                 </div>
               </div>
