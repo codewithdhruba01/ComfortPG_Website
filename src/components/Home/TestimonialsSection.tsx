@@ -10,7 +10,7 @@ const TestimonialsSection: React.FC = () => {
       id: 1,
       name: 'Arjun Sharma',
       role: 'Software Engineer',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbpujGiaaPEovRao89kU7HcUg--GGph-Xjg&s',
       rating: 5,
       comment: 'Amazing PG with all modern amenities. The staff is very helpful and the location is perfect for my office commute. Highly recommended!'
     },
@@ -18,7 +18,7 @@ const TestimonialsSection: React.FC = () => {
       id: 2,
       name: 'Priya Patel',
       role: 'CA Student',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbpujGiaaPEovRao89kU7HcUg--GGph-Xjg&s',
       rating: 5,
       comment: 'Great experience living here. The rooms are spacious, clean, and the food is delicious. Safety is also top-notch with 24/7 security.'
     },
@@ -26,7 +26,7 @@ const TestimonialsSection: React.FC = () => {
       id: 3,
       name: 'Rohit Kumar',
       role: 'Marketing Manager',
-      image: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbpujGiaaPEovRao89kU7HcUg--GGph-Xjg&s',
       rating: 5,
       comment: 'The best PG I have ever stayed in. Professional management, great facilities, and a wonderful community of residents.'
     },
@@ -34,7 +34,7 @@ const TestimonialsSection: React.FC = () => {
       id: 4,
       name: 'Sneha Reddy',
       role: 'MBA Student',
-      image: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbpujGiaaPEovRao89kU7HcUg--GGph-Xjg&s',
       rating: 5,
       comment: 'Excellent value for money! The WiFi is super fast, rooms are well-maintained, and the location is convenient for metro access.'
     }
@@ -44,13 +44,13 @@ const TestimonialsSection: React.FC = () => {
     <section className={`py-20 ${darkMode ? 'bg-gray-800' : 'bg-gray-50'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className={`text-4xl md:text-5xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
+          <h2 className={`text-4xl md:text-5xl font-excon font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
             What Our Residents
             <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent block mt-2">
               Say About Us
             </span>
           </h2>
-          <p className={`text-xl ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
+          <p className={`text-xl ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto font-poppins`}>
             Don't just take our word for it. Here's what our happy residents have to say about their experience.
           </p>
         </div>
