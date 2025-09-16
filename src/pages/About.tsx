@@ -48,25 +48,25 @@ const About: React.FC = () => {
     {
       name: 'Rajesh Kumar',
       role: 'Founder & CEO',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbpujGiaaPEovRao89kU7HcUg--GGph-Xjg&s',
       description: 'Visionary leader with 10+ years in hospitality industry.'
     },
     {
       name: 'Priya Sharma',
       role: 'Operations Manager',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbpujGiaaPEovRao89kU7HcUg--GGph-Xjg&s',
       description: 'Expert in operations management and customer service.'
     },
     {
       name: 'Amit Patel',
       role: 'Property Manager',
-      image: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbpujGiaaPEovRao89kU7HcUg--GGph-Xjg&s',
       description: 'Specializes in property maintenance and resident relations.'
     },
     {
       name: 'Sneha Reddy',
       role: 'Customer Success',
-      image: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbpujGiaaPEovRao89kU7HcUg--GGph-Xjg&s',
       description: 'Dedicated to ensuring the best experience for all residents.'
     }
   ];
@@ -75,14 +75,14 @@ const About: React.FC = () => {
     <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-gray-50'} py-12`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 py-5">
           <h1 className={`text-4xl md:text-5xl font-excon font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
             About
-            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent block mt-2 font-excon">
+            <span className="bg-gradient-to-r from-blue-600 to-sky-600 bg-clip-text text-transparent block mt-2 font-excon">
               ComfortPG
             </span>
           </h1>
-          <p className={`text-xl ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-4xl mx-auto leading-relaxed font-synonym`}>
+          <p className={`text-base ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-4xl mx-auto leading-relaxed font-poppins`}>
             We are dedicated to providing comfortable, secure, and affordable accommodation solutions for students and professionals. 
             Our mission is to create a home away from home where residents can thrive and build lasting connections.
           </p>
@@ -128,7 +128,7 @@ const About: React.FC = () => {
             <h2 className={`text-3xl font-excon font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
               Our Values
             </h2>
-            <p className={`text-lg font-synonym ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
+            <p className={`text-lg font-poppins ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
               These core values guide everything we do and help us create exceptional living experiences for our residents.
             </p>
           </div>
@@ -144,10 +144,10 @@ const About: React.FC = () => {
                   <div className={`w-16 h-16 bg-gradient-to-r ${value.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <Icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className={`text-xl font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} mb-3`}>
+                  <h3 className={`text-xl font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} font-synonym font-semibold mb-3`}>
                     {value.title}
                   </h3>
-                  <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                  <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} font-satoshi`}>
                     {value.description}
                   </p>
                 </div>
@@ -159,10 +159,10 @@ const About: React.FC = () => {
         {/* Team Section */}
         <div className="mb-20">
           <div className="text-center mb-16">
-            <h2 className={`text-3xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
+            <h2 className={`text-3xl font-bold font-excon ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
               Meet Our Team
             </h2>
-            <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
+            <p className={`text-lg font-poppins ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
               Our dedicated team works tirelessly to ensure that every resident has the best possible experience.
             </p>
           </div>
@@ -178,13 +178,13 @@ const About: React.FC = () => {
                   alt={member.name}
                   className="w-20 h-20 rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
                 />
-                <h3 className={`text-lg font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} mb-2`}>
+                <h3 className={`text-lg font-poppins font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-2`}>
                   {member.name}
                 </h3>
-                <p className="text-purple-600 font-medium mb-3">
+                <p className="text-purple-900 font-outfit font-medium mb-3">
                   {member.role}
                 </p>
-                <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                <p className={`text-sm font-satoshi ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                   {member.description}
                 </p>
               </div>
@@ -195,10 +195,10 @@ const About: React.FC = () => {
         {/* Stats Section */}
         <div className={`${darkMode ? 'bg-gray-800' : 'bg-white'} rounded-2xl p-8 md:p-12`}>
           <div className="text-center mb-12">
-            <h2 className={`text-3xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>
+            <h2 className={`text-3xl font-excon font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>
               Our Impact
             </h2>
-            <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+            <p className={`text-lg font-poppins ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
               Numbers that showcase our commitment to excellence
             </p>
           </div>
