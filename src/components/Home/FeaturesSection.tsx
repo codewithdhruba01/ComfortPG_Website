@@ -68,13 +68,13 @@ const FeaturesSection: React.FC = () => {
       >
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className={`text-4xl md:text-5xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
+          <h2 className={`text-4xl md:text-5xl font-bold font-synonym ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
             Why Choose Our
-            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent block mt-2">
+            <span className="bg-gradient-to-r from-blue-600 to-sky-600 bg-clip-text text-transparent block mt-2 font-excon">
               PG Accommodations?
             </span>
           </h2>
-          <p className={`text-xl ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
+          <p className={`text-xl ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto font-satoshi`}>
             We provide modern amenities, comfortable living spaces, and a safe environment for professionals and students.
           </p>
         </div>
@@ -95,10 +95,10 @@ const FeaturesSection: React.FC = () => {
                 <div className={`w-16 h-16 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <Icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className={`text-xl font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} mb-3`}>
+                <h3 className={`text-xl font-synonym font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} mb-3`}>
                   {feature.title}
                 </h3>
-                <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} font-satoshi`}>
                   {feature.description}
                 </p>
               </motion.div>
