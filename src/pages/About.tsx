@@ -76,13 +76,13 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className={`text-4xl md:text-5xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
+          <h1 className={`text-4xl md:text-5xl font-excon font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
             About
-            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent block mt-2">
+            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent block mt-2 font-excon">
               ComfortPG
             </span>
           </h1>
-          <p className={`text-xl ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-4xl mx-auto leading-relaxed`}>
+          <p className={`text-xl ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-4xl mx-auto leading-relaxed font-synonym`}>
             We are dedicated to providing comfortable, secure, and affordable accommodation solutions for students and professionals. 
             Our mission is to create a home away from home where residents can thrive and build lasting connections.
           </p>
@@ -92,19 +92,19 @@ const About: React.FC = () => {
         <div className="mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className={`text-3xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
+              <h2 className={`text-3xl font-synonym  ${darkMode ? 'text-white' : 'text-gray-900'} mb-6 font-bold`}>
                 Our Story
               </h2>
-              <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'} mb-6`}>
+              <p className={`text-base ${darkMode ? 'text-gray-300' : 'text-gray-600'} mb-6 font-satoshi`}>
                 Founded in 2021, ComfortPG began with a simple vision: to revolutionize the paying guest accommodation 
                 industry by providing safe, comfortable, and affordable living spaces for students and working professionals.
               </p>
-              <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'} mb-6`}>
+              <p className={`text-base ${darkMode ? 'text-gray-300' : 'text-gray-600'} mb-6 font-satoshi`}>
                 What started as a small venture with a handful of rooms has grown into a trusted network of premium 
                 PG accommodations across major cities. We've housed over 5,000 happy residents and continue to expand 
                 our services to meet the growing demand for quality accommodation.
               </p>
-              <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+              <p className={`text-base font-satoshi ${darkMode ? 'text-gray-300' : 'text-gray-600 '}`}>
                 Today, we're proud to be a leading name in the PG industry, known for our commitment to excellence, 
                 innovation, and creating communities that feel like home.
               </p>
@@ -125,10 +125,10 @@ const About: React.FC = () => {
         {/* Values Section */}
         <div className="mb-20">
           <div className="text-center mb-16">
-            <h2 className={`text-3xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
+            <h2 className={`text-3xl font-excon font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-6`}>
               Our Values
             </h2>
-            <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
+            <p className={`text-lg font-synonym ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
               These core values guide everything we do and help us create exceptional living experiences for our residents.
             </p>
           </div>
