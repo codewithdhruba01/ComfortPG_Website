@@ -38,9 +38,6 @@ A modern, responsive PG (Paying Guest) accommodation website built with React, T
 - [Deployment](#-deployment)
 - [Acknowledgments](#-acknowledgments)
 
-
-
-
 ## 🌟 Features
 
 ### Core Functionality
@@ -85,16 +82,6 @@ A modern, responsive PG (Paying Guest) accommodation website built with React, T
 - **React 18.3.1**: Modern React with hooks and functional components
 - **TypeScript 5.5.3**: Type-safe development
 - **Vite 5.4.2**: Fast build tool and development server
-
-### Styling & UI
-- **Tailwind CSS 3.4.1**: Utility-first CSS framework
-- **Framer Motion 12.23.6**: Animation library for smooth transitions
-- **Lucide React 0.344.0**: Beautiful icon library
-- **PostCSS 8.4.35**: CSS processing
-- **Autoprefixer 10.4.18**: CSS vendor prefixing
-
-### Routing & Navigation
-- **React Router DOM 7.7.0**: Client-side routing
 
 ### Development Tools
 - **ESLint 9.9.1**: Code linting
@@ -179,59 +166,6 @@ src/
 └── index.css           # Global styles and Tailwind imports
 ```
 
-
-## 🔧 Configuration
-
-### Tailwind Configuration
-The project uses a custom Tailwind configuration with:
-- Dark mode support
-- Custom animations
-- Extended color palette
-- Custom spacing values
-- Typography enhancements
-
-### TypeScript Configuration
-- Strict mode enabled
-- Modern ES2020 target
-- React JSX support
-- Path mapping for clean imports
-
-### Vite Configuration
-- React plugin enabled
-- Optimized dependencies
-- Fast refresh support
-- Production optimizations
-
-## Animations & Interactions
-
-### Framer Motion Features
-- Page transitions
-- Scroll-triggered animations
-- Hover effects
-- Loading states
-- Micro-interactions
-
-### Animation Types
-- **Fade In**: Smooth opacity transitions
-- **Slide Up**: Vertical movement animations
-- **Scale**: Hover and focus effects
-- **Stagger**: Sequential animations for lists
-
-## 🔍 SEO & Performance
-
-### SEO Optimizations
-- Semantic HTML structure
-- Meta tags and descriptions
-- Proper heading hierarchy
-- Alt text for images
-- Clean URL structure
-
-### Performance Features
-- Code splitting with React.lazy
-- Optimized images
-- Minimal bundle size
-- Fast loading times
-- Efficient re-renders
 
 ## 🚀 Deployment
 
